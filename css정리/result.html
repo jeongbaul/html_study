@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    당신의 MBTI는 <span id="in"></span> 입니다.
+    당신의 MBTI는 <span id="in2"></span> 입니다.
+    <button onclick="location.replace('question.html')">다시하기 </button>
+    <script>
+        window.onload = function() {
+
+            var obj = document.getElementById("in");
+            obj.innerHTML = '테스트';
+
+            var odj = document.getElementById("in2");
+            alert(getParm('q1'));
+            var q1 = getParm('q1')
+            var q2 = getParm('q2')
+            var q3 = getParm('q3')
+            var q4 = getParm('q4')
+            obj.innerHTML = q1+q2+q3+q4;
+        
+        }
+        function getParm(sname) {
+            var params = location.search.substr(location.search.indexOf("?") + 1);
+            var sval = "";
+            params = params.split("&");
+            for (var i = 0; i < params.length; i++) {
+                temp = params[i].split("=");
+                console.log(temp);
+                if ([temp[0]] == sname) { sval = temp[1];}
+            }
+            return sval;
+        }
+
+
+            const urlStr = window.location.href;
+
+        
+    </script>
+</body>
+</html>
