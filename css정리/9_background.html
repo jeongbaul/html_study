@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Background</title>
+    <style>
+      .red {
+        background-color: #ff0000c9;
+        width: 120px;
+        height: 120px;
+      }
+      .imge {
+        background-image: url('../assets/images/floral.jpg');
+        background-repeat: repeat;
+        background-position-y: top right;
+        width: 200px;
+        height: 400px;
+        border: 1px solid black;
+        display: inline-block;
+        overflow-y: scroll;
+      }
+      .attachment-scroll {
+        background-attachment: scroll;
+      }
+      .attachment-fixed {
+        background-attachment: fixed;
+      }
+      .attachment-local {
+        background-attachment: local;
+      }
+      .background-size {
+        width: 300px;
+        height: 300px;
+        background-image: url('../assets/images/football.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        border: 1px solid black;
+      }
+      .linear-gradient {
+        width: 500px;
+        height: 200px;
+        border: 1px solid red;
+        background: linear-gradient(to right, red 50%, blue 80%, yellow 100%);
+      }
+      .radial-gradient {
+        width: 500px;
+        height: 200px;
+        border: 1px solid blue;
+        background: radial-gradient(
+          crircle at 10% 50%,
+          white,
+          yellow,
+          red,
+          blue
+        );
+      }
+    </style>
+  </head>
+  <body>
+    <h3>background-color</h3>
+    <div class="red"></div>
+
+    <h3>background-image</h3>
+    <div class="image attachment-scroll">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa rerum
+      eveniet illum! Tenetur alias iure accusantium iusto ad labore voluptates
+      distinctio maxime est, quisquam laboriosam cumque nesciunt vitae
+      voluptatibus iste! Perferendis possimus et neque, laborum delectus ipsam
+      molestiae natus cupiditate officiis eius, nesciunt, labore quisquam esse
+      sint. Deleniti harum et, vero, excepturi, sint esse ullam veniam minima
+      odio numquam officiis. Optio iure facere odio reiciendis vero ad
+      accusantium rerum non ducimus veritatis? Quisquam ut animi quasi ducimus
+      earum nostrum distinctio beatae hic eaque perferendis harum, veritatis
+      molestias corrupti, architecto neque. Corrupti, rem quos, nam dolorum
+      totam culpa odit autem illum voluptates nemo quia molestias optio dolorem
+      officia recusandae aut ipsa, rerum beatae distinctio dolores vitae
+      repellat! Sunt incidunt dicta amet? Odit, earum qui non temporibus nisi ut
+      maiores consequatur veniam! Ut nesciunt odit aperiam magnam hic eveniet et
+      aspernatur cumque? Aliquam aspernatur aperiam totam qui iste veniam
+      facilis? Officiis, autem. Obcaecati doloribus sed eos non nulla assumenda
+      ducimus, dicta quis accusamus animi cupiditate maxime iusto iure deserunt
+      eaque iste veritatis perferendis ullam, doloremque nesciunt tenetur
+      consectetur ipsam! Neque, dolor ea. Pariatur architecto, aperiam odit
+      incidunt quibusdam exercitationem illum, ipsum libero itaque aliquam ipsa.
+      Quibusdam magni laudantium omnis perspiciatis. Sed quis quam officiis nam
+      quia harum possimus totam! Totam, dolor beatae? Iusto illo nihil, delectus
+      facilis sint, quis eligendi eum rerum eveniet nobis in, dolorem omnis quas
+      asperiores sunt. Error culpa debitis, enim ullam voluptatum magnam!
+      Tempora natus nam ullam reprehenderit?
+    </div>
+    <div class="image attachment-fixed">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa rerum
+      eveniet illum! Tenetur alias iure accusantium iusto ad labore voluptates
+      distinctio maxime est, quisquam laboriosam cumque nesciunt vitae
+      voluptatibus iste! Perferendis possimus et neque, laborum delectus ipsam
+      molestiae natus cupiditate officiis eius, nesciunt, labore quisquam esse
+      sint. Deleniti harum et, vero, excepturi, sint esse ullam veniam minima
+      odio numquam officiis. Optio iure facere odio reiciendis vero ad
+      accusantium rerum non ducimus veritatis? Quisquam ut animi quasi ducimus
+      earum nostrum distinctio beatae hic eaque perferendis harum, veritatis
+      molestias corrupti, architecto neque. Corrupti, rem quos, nam dolorum
+      totam culpa odit autem illum voluptates nemo quia molestias optio dolorem
+      officia recusandae aut ipsa, rerum beatae distinctio dolores vitae
+      repellat! Sunt incidunt dicta amet? Odit, earum qui non temporibus nisi ut
+      maiores consequatur veniam! Ut nesciunt odit aperiam magnam hic eveniet et
+      aspernatur cumque? Aliquam aspernatur aperiam totam qui iste veniam
+      facilis? Officiis, autem. Obcaecati doloribus sed eos non nulla assumenda
+      ducimus, dicta quis accusamus animi cupiditate maxime iusto iure deserunt
+      eaque iste veritatis perferendis ullam, doloremque nesciunt tenetur
+      consectetur ipsam! Neque, dolor ea. Pariatur architecto, aperiam odit
+      incidunt quibusdam exercitationem illum, ipsum libero itaque aliquam ipsa.
+      Quibusdam magni laudantium omnis perspiciatis. Sed quis quam officiis nam
+      quia harum possimus totam! Totam, dolor beatae? Iusto illo nihil, delectus
+      facilis sint, quis eligendi eum rerum eveniet nobis in, dolorem omnis quas
+      asperiores sunt. Error culpa debitis, enim ullam voluptatum magnam!
+      Tempora natus nam ullam reprehenderit?
+    </div>
+    <div class="image attachment-local">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa rerum
+      eveniet illum! Tenetur alias iure accusantium iusto ad labore voluptates
+      distinctio maxime est, quisquam laboriosam cumque nesciunt vitae
+      voluptatibus iste! Perferendis possimus et neque, laborum delectus ipsam
+      molestiae natus cupiditate officiis eius, nesciunt, labore quisquam esse
+      sint. Deleniti harum et, vero, excepturi, sint esse ullam veniam minima
+      odio numquam officiis. Optio iure facere odio reiciendis vero ad
+      accusantium rerum non ducimus veritatis? Quisquam ut animi quasi ducimus
+      earum nostrum distinctio beatae hic eaque perferendis harum, veritatis
+      molestias corrupti, architecto neque. Corrupti, rem quos, nam dolorum
+      totam culpa odit autem illum voluptates nemo quia molestias optio dolorem
+      officia recusandae aut ipsa, rerum beatae distinctio dolores vitae
+      repellat! Sunt incidunt dicta amet? Odit, earum qui non temporibus nisi ut
+      maiores consequatur veniam! Ut nesciunt odit aperiam magnam hic eveniet et
+      aspernatur cumque? Aliquam aspernatur aperiam totam qui iste veniam
+      facilis? Officiis, autem. Obcaecati doloribus sed eos non nulla assumenda
+      ducimus, dicta quis accusamus animi cupiditate maxime iusto iure deserunt
+      eaque iste veritatis perferendis ullam, doloremque nesciunt tenetur
+      consectetur ipsam! Neque, dolor ea. Pariatur architecto, aperiam odit
+      incidunt quibusdam exercitationem illum, ipsum libero itaque aliquam ipsa.
+      Quibusdam magni laudantium omnis perspiciatis. Sed quis quam officiis nam
+      quia harum possimus totam! Totam, dolor beatae? Iusto illo nihil, delectus
+      facilis sint, quis eligendi eum rerum eveniet nobis in, dolorem omnis quas
+      asperiores sunt. Error culpa debitis, enim ullam voluptatum magnam!
+      Tempora natus nam ullam reprehenderit?
+    </div>
+    <h3>background-size</h3>
+    <div class="background-size"></div>
+    <h3>linear-gradient</h3>
+    <div class="linear-gradient"></div>
+    <h3>radial-gradient</h3>
+    <div class="radial-gradient"></div>
+    <div style="height: 1000px; width: 10px; background-color: red"></div>
+  </body>
+</html>
