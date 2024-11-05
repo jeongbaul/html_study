@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Query</title>
+    <style>
+      /*
+      min-width
+      max-width
+      0~400ps blue
+      401ps ~ 600px red
+      601px ~ yellow
+      */
+
+      @media (max-width: 400px) {
+        body {
+          background-color: blue;
+        }
+      }
+      @media (min-width: 401px) and (max-width: 600px) {
+        body {
+          background-color: red;
+        }
+      }
+      @media all and (min-width: 601px) {
+        body {
+          background-color: yellow;
+        }
+      }
+      @media print {
+        h1 {
+          font-size: 120px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>안녕하세요</h1>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia eos a
+      laudantium assumenda saepe! Explicabo, voluptatum hic reiciendis
+      molestiae, libero quas, fuga illo nam ipsum dignissimos dolor consequuntur
+      minima autem? Ipsum voluptatem consequatur temporibus illo dolore dolorum
+      esse cupiditate sit, blanditiis expedita, alias quam? Quos, laudantium
+      error debitis sit commodi placeat nobis saepe, totam sed expedita aut,
+      blanditiis ipsa atque. Repellendus dolorem tenetur eveniet doloremque
+      necessitatibus, aperiam autem consequatur consectetur voluptatibus officia
+      provident exercitationem reiciendis cum pariatur recusandae? Aperiam
+      minima suscipit voluptatibus praesentium nobis enim molestiae animi magnam
+      quos sapiente? Voluptatem rerum saepe voluptatum, debitis officiis
+      tenetur, obcaecati consectetur totam modi distinctio eligendi. Maxime cum,
+      soluta assumenda rerum hic ad itaque dicta sapiente ipsa aliquid corrupti?
+      Iste inventore quibusdam delectus. Quasi voluptatibus perferendis tempora?
+      Earum vitae libero repellat magnam facilis fuga eaque numquam suscipit
+      aliquam nesciunt assumenda soluta hic exercitationem molestiae, dolore
+      tempore facere totam voluptatum. Provident quo voluptas asperiores.
+    </p>
+  </body>
+</html>
